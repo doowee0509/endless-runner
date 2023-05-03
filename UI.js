@@ -37,6 +37,7 @@ export class UI {
             btn.id = "play-btn-3";
             btn.className = "btn";
             btn.innerHTML = "Play Again"
+            btn.style.display = "flex";
             document.getElementsByTagName('body')[0].prepend(btn);
             document.getElementById('play-btn-3').style.zIndex = 10;
             document.getElementById('play-btn-3').addEventListener('click', () => {

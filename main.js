@@ -115,6 +115,7 @@ window.addEventListener('load', () => {
     function play() {
         game.speed = 4;
         document.getElementById('instruction').style.zIndex = "-1";
+        document.getElementById('instruction').style.display = "none";
         document.getElementById('btns').style.display = "none";
         game.player.currentState = game.player.states[1];
         game.player.currentState.enter();
@@ -125,6 +126,9 @@ window.addEventListener('load', () => {
     
     document.getElementById("help-btn").addEventListener("click", () => {
         document.getElementById('instruction').style.zIndex = "10";
+        document.getElementById('instruction').style.display = "flex";
+        document.getElementById('wrapper').style.display = "flex";
+
         
     });
 
